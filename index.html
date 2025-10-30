@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Onboarding Dashboard</title>
+   <!-- Bootstrap 2.3.2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d79f9b8a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-fixed-top custom-navbar">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo" />
+          <span class="onboard-check">Onboarding Checklist</span>
+        </a>
+        <ul class="nav pull-right">
+          <li><a href="#">Dashboard</a></li>
+          <li class="active"><a href="#">Projects</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="container">
+    <div class="onboarding-card">
+      <!-- CARD HEADER -->
+      <div class="onboard-header">
+        <h2>Welcome to Your Project Setup 🌟</h2>
+        <p>Complete the steps below to personalize and activate your workspace experience.</p>
+        <div class="progress-container">
+          <div class="progress mb-2">
+            <div class="progress-bar" id="progressBar" style="width: 50%"></div>
+          </div>
+          <div class="progress-percent" id="progressPercent">50%</div>
+        </div>
+        <div class="progress-text" id="progressText">2 of 4 steps completed</div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="checklist-container">
+        <div class="check-item completed">
+          <div class="check-label">
+            <div class="check-icon"><i class="fas fa-check"></i></div>
+            Create your first project
+          </div>
+          <span class="completed-badge"><i class="fas fa-check-circle"></i> Completed</span>
+        </div>
+
+        <div class="check-item completed">
+          <div class="check-label">
+            <div class="check-icon"><i class="fas fa-users"></i></div>
+            Invite your team
+          </div>
+         <span class="completed-badge"><i class="fas fa-check-circle"></i> Completed</span>
+        </div>
+
+        <div class="check-item">
+          <div class="check-label">
+            <div class="check-icon"><i class="fas fa-plug"></i></div>
+            Connect integrations (Jira, Slack)
+          </div>
+          <button class="btn btn-outline-primary">Connect</button>
+        </div>
+
+        <div class="check-item">
+          <div class="check-label">
+            <div class="check-icon"><i class="fas fa-play"></i></div>
+            Run your first test
+          </div>
+          <button class="btn btn-outline-primary">Start</button>
+        </div>
+
+        <div class="progress-info" id="progressInfo">Keep going! You're doing great 🚀</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>© 2025 Onboarding Checklist — All Rights Reserved</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+<!-- </body> -->
+</html>
